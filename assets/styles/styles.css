@@ -1,0 +1,34 @@
+.header__center-title {
+  font-family: "Barlow Condensed";
+}
+
+* {
+  outline: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 21px;
+  letter-spacing: 0.02px;
+  font-weight: 500;
+  line-height: 1.4762;
+}
+body button, body input, body select, body textarea {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}/*# sourceMappingURL=styles.css.map */

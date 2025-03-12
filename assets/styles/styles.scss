@@ -1,0 +1,32 @@
+@use 'libs/variables' as *;
+@use 'partials/header';
+
+* {
+    outline: 0;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-body;
+    font-size: $font-body-size-large;
+    letter-spacing: .02px;
+    font-weight: 500;
+    line-height: 1.4762;
+    button, input, select, textarea {
+        -webkit-font-smoothing: antialiased;
+        text-size-adjust: 100%;
+    }
+}
+
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
