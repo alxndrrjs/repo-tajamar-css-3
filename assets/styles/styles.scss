@@ -1,9 +1,12 @@
-@use 'libs/variables' as *;
-@use 'partials/header';
-@use 'partials/main';
-@use 'partials/social';
+@import 'libs/variables';
+@import 'libs/keyframes';
 
-@use 'libs/keyframes';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/social';
+@import 'partials/divisor';
+@import 'partials/products';
+
 
 * {
     outline: 0;
@@ -11,6 +14,11 @@
 
 *, :after, :before {
     box-sizing: border-box;
+    // border: 1px solid salmon;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

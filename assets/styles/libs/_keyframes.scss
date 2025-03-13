@@ -1,14 +1,26 @@
-@use './variables' as *;
-@use '../partials/main' as *;
+// @use './variables' as *;
+// @use '../partials/main' as *;
 
 @keyframes img-banner-inclinar {
     0% {
-        transform: rotate(10deg); // No hay inclinación al inicio
+        transform: rotate(10deg);
     }
     50% {
-        transform: rotate(30deg); // Inclinación hacia un lado
+        transform: rotate(30deg);
     }
     100% {
-        transform: rotate(10deg); // Inclinación hacia el otro lado
+        transform: rotate(10deg); 
+    }
+}
+
+@keyframes img-cloud-mover {
+    0% {
+        transform: translateX(0); /* Comienza en su posición inicial */
+    }
+    50% {
+        transform: translateX(15px); /* Se mueve a la derecha */
+    }
+    100% {
+        transform: translateX(0); /* Vuelve a la posición inicial */
     }
 }

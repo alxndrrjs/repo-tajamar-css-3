@@ -1,0 +1,83 @@
+.section__products {
+    .section__products-content {
+
+        .section__products-content-main {
+            
+            margin-top: 30px;
+            text-align: center;
+
+            .section__products-content-title {
+                font-family: $font-main;
+                text-transform: uppercase;
+                font-size: $font-main-size-main__title;
+                font-weight: $font-weight-main-title;
+                letter-spacing: $main-letter-spacing__title;
+                line-height: 1;
+                margin: 0;
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: column;
+
+                .section__products-content-title-up {
+                    font-family: $font-body-sub;
+                    color: $main-color;
+                    font-size: $font-products-size-sub;
+                    font-weight: 600;
+                    font-style: italic;
+                    margin-bottom: -15px;
+                }
+            }
+        }
+
+        .section__products-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .section__products-item{
+                padding: 19px 23px;
+
+                .section__products-header {
+
+                }
+
+                .section__products-body {
+
+                }
+
+                .section__products-footer {
+                    
+                    .section__products-footer-title {
+
+                        text-transform: uppercase;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: $font-products-size-footer;
+                        font-weight: 900;
+                        display: flex;
+                        gap: 25px;
+                        line-height: 1;   
+                        margin-top: 10px;
+                        margin-bottom: 45px;
+                    }
+
+                    .section__products-footer-btn {
+                        text-transform: uppercase;
+                        background-color: $global-btn-background;
+                        border-radius: 50px;
+                        border: solid $global-border-width $global-border-color;
+                        color: $global-btn-color;
+                        padding: 16px;
+                        transition: all .2s ease-in-out ;
+
+                        &:hover {
+                            background-color: $global-btn-background-hover;
+                            color: $global-btn-color-hover;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
