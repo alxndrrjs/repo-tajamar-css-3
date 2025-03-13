@@ -1,5 +1,9 @@
 @use 'libs/variables' as *;
 @use 'partials/header';
+@use 'partials/main';
+@use 'partials/social';
+
+@use 'libs/keyframes';
 
 * {
     outline: 0;
@@ -9,24 +13,17 @@
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 body {
     font-family: $font-body;
     font-size: $font-body-size-large;
     letter-spacing: .02px;
     font-weight: 500;
-    line-height: 1.4762;
-    button, input, select, textarea {
-        -webkit-font-smoothing: antialiased;
-        text-size-adjust: 100%;
-    }
+    margin: 0;
+    padding: 0;
+    
 }
 
-
-div {
-    display: block;
-    unicode-bidi: isolate;
+a {
+    all: unset;
+    cursor: pointer;
 }

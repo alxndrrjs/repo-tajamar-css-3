@@ -1,3 +1,33 @@
+$color-background: #fff;
+$main-color: #FFBDD5;
+$sec-color: #8DDDFF;
+
 $font-main: 'Barlow Condensed';
+$font-main-size-header__title: 30px;
+$font-main-size-main__title: 90px;
+$font-weight-title: 700;
+$font-weight-main-title: 900;
+$font-weight-sub-title: 400;
+
 $font-body: 'Inter';
+$font-weight-header-sub-title: 800;
 $font-body-size-large: 21px;
+
+$global-border-width: 2px;
+$global-border-color: #000;
+
+$header-height: 58px;
+$header-padding: 20px;
+$header-letter-spacing: -0.5px;
+$header-btn-color: #000;
+$header-btn-color-hover: #FFBDD5;
+$header-text-color: #000;
+$header-text-color-white: #fff;
+
+$main-letter-spacing__title: -2px;
+$main-height-font__title: scaleY(1.6);
+
+$global-btn-background: #fff;
+$global-btn-background-hover: #000;
+$global-btn-color: #000;
+$global-btn-color-hover: #fff;

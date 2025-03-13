@@ -1,0 +1,103 @@
+@use '../libs/variables' as *;
+
+.section__main {
+    padding: 100px 0;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, $sec-color, $color-background);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    .section__main-content {
+        z-index: 40;
+        display: flex;
+        justify-content: flex-start;
+        margin: 100px 85px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .section__main-banner-img {
+        position: absolute;
+        top: 150px;
+        right: 240px;
+        z-index: 1;
+        height: 600px;
+        width: auto;
+        animation: img-banner-inclinar 2s ease-in-out infinite;
+    }
+
+    // .section__main-banner {
+    //     position: relative;
+    //     height: 100%;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+
+    //     .section__main-banner-img {
+    //         position: absolute;
+    //         z-index: 1;
+    //         height: 500px;
+    //         width: auto;
+    //         animation: img-banner-inclinar 2s ease-in-out infinite;
+    //     }
+    // }
+
+    .jdge-all-reviews {
+        color: $main-color !important;
+
+        span {
+            &::before {
+                content: "\f005";
+                font-family: "Font Awesome 6 Free";
+                font-weight: bold;
+            }
+        }
+    }
+
+    .section__main-content-rating-judge {
+        display: flex;
+
+        .number {
+            margin-left: 10px;
+            margin-right: 5px;
+            text-decoration: underline !important;
+        }
+    }
+
+    .section__main-content-title {
+        text-transform: uppercase;
+        font-size: $font-main-size-main__title;
+        font-weight: $font-weight-main-title;
+        letter-spacing: $main-letter-spacing__title;
+        line-height: 1;
+        transform: $main-height-font__title;    
+        margin-top: 45px;
+        margin-bottom: 40px;
+    }
+
+    .section__main-content-desc {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .section__main-btn {
+
+        .section__main-btn-inner {
+
+            text-transform: uppercase;
+            background-color: $global-btn-background;
+            border-radius: 50px;
+            border: solid $global-border-width $global-border-color;
+            padding: 16px;
+            transition: all .2s ease-in-out ;
+
+            &:hover {
+                background-color: $global-btn-background-hover;
+                color: $global-btn-color-hover;
+            }
+        }
+    }
+    
+}

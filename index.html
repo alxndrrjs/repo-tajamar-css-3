@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uñas de gato</title>
+    <title>Uñas De Gato</title>
 
     <link rel="stylesheet" href="./assets/styles/styles.css">
 
@@ -11,21 +11,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <!-- 1. Selectores y especifidad en componentes de E-commerce -->
     <!-- 1.1 Productos destacados con efectos hover -->
-    <header class="header__main--centered">
+    <header class="header header__main--centered">
         <div class="main-container">
-            <div class="header__left"></div>
-            <div class="header__center">
-                <h1 class="header__center-title">Uñas de gato</h1>
+            <div class="header__wrapper">
+                <div class="header__bar">
+                    <div class="header__wrapper-bar">
+                        <div class="header__left">
+                            <a class="header__menu" href="">
+                                <img class="header__menu-img" src="assets/img/header-icon/wave-menu-icon.png" alt="">
+                            </a>
+                            <div class="header__shop">
+                                <a href="pages/all.html" class="header__shop-title">
+                                    <span>Shop</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__center">
+                            <a href="index.html">
+                                <h1 class="header__center-title">Uñas de gato</h1>
+                            </a>
+                        </div>
+                        <div class="header__right">
+                            <a class="header__account">
+                                <img class="header__icon-img" src="assets/img/header-icon/account-icon.png" alt="">
+                            </a>
+                            <a class="header__cart">
+                                <button class="header__cart-btn">
+                                    Cart
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header__right"></div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div class="main-container">
+            <section class="section__main">
+                <section class="section__main-content">
+                    <div class="section__main-content-rating-judge">
+                        <div class="jdge-all-reviews">
+                            <span class="judge-star jdge-on"></span>
+                            <span class="judge-star jdge-on"></span>
+                            <span class="judge-star jdge-on"></span>
+                            <span class="judge-star jdge-on"></span>
+                            <span class="judge-star jdge-half"></span>
+                        </div>
+                        <span class="number">+1000</span>
+                        <span>Ventas realizadas, Ventas x7!</span>
+                    </div>
+                    <h1 class="section__main-content-title">
+                        NUEVAS LATAS <br> COLECCIONABLES
+                    </h1>
+                    <div class="section__main-content-desc">
+                        <p>
+                            <u>Haz que tu colección se vea increíble <br>
+                            con estos nuevos diseños</u>
+                        </p>
+                    </div>
+                    <div class="section__main-btn">
+                        <a class="section__main-btn-inner" href="">Comprar ahora</a>
+                    </div>
+                </section>
+                <img class="section__main-banner-img" src="assets/img/main-banner-png/banner-lata.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </section>  
+        </div>
+        <section class="section__social">
+            <section class="section__social-content">
+                <h1 class="section__social-content-title">
+                    Al estilo<br>uñas de gato
+                </h1>
+                <div class="section__social-content-carousel">
+
+                </div>
+            </section>
+        </section>
+    </main>
     <footer></footer>
     
 </body>

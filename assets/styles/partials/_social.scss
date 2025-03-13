@@ -1,0 +1,31 @@
+@use '../libs/variables' as *;
+
+.section__social {
+    background: linear-gradient(to top,$sec-color ,$color-background );
+    margin: 0;
+    height: 100vh;
+}
+
+.section__social-content {
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    margin: 100px 85px;
+    flex-direction: column;
+}
+
+.section__social-content-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-main-size-main__title;
+    font-weight: $font-weight-main-title;
+    letter-spacing: $main-letter-spacing__title;
+    line-height: 1;
+    transform: $main-height-font__title;    
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.section__social-content-carousel {
+    
+}

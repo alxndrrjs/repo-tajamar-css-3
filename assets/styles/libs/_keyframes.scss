@@ -1,0 +1,14 @@
+@use './variables' as *;
+@use '../partials/main' as *;
+
+@keyframes img-banner-inclinar {
+    0% {
+        transform: rotate(10deg); // No hay inclinación al inicio
+    }
+    50% {
+        transform: rotate(30deg); // Inclinación hacia un lado
+    }
+    100% {
+        transform: rotate(10deg); // Inclinación hacia el otro lado
+    }
+}
