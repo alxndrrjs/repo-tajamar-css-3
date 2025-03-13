@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   position: fixed;
   top: 0.5rem;
@@ -212,7 +213,6 @@
 .section__social {
   background: linear-gradient(to top, #8DDDFF, #fff);
   margin: 0;
-  height: 100vh;
 }
 
 .section__social-content {
@@ -233,6 +233,59 @@
   transform: scaleY(1.6);
   margin-top: 45px;
   margin-bottom: 45px;
+}
+
+.section__social-content-carousel {
+  margin-top: 100px !important;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: transparent;
+}
+.section__social-content-carousel .carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.section__social-content-carousel .carousel-item {
+  min-width: 33.33%; /* Mostrar 3 videos al mismo tiempo */
+  box-sizing: border-box;
+  padding: 10px; /* Espacio entre los videos */
+}
+.section__social-content-carousel .carousel-item video {
+  width: 100%;
+  height: 500px; /* Ajusta la altura según lo necesites */
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  /* Reducir el tamaño de los controles */
+  outline: none;
+  transform: scale(0.95); /* Disminuir ligeramente el tamaño */
+}
+.section__social-content-carousel .carousel-item video::-webkit-media-controls {
+  width: 100% !important;
+  font-size: 12px !important; /* Reducir el tamaño de los controles */
+}
+.section__social-content-carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+.section__social-content-carousel button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.section__social-content-carousel .prev {
+  left: 0px;
+}
+.section__social-content-carousel .next {
+  right: 0px;
 }
 
 @keyframes img-banner-inclinar {
@@ -257,6 +310,7 @@
 body {
   font-family: "Inter";
   font-size: 21px;
+  background-color: transparent !important;
   letter-spacing: 0.02px;
   font-weight: 500;
   margin: 0;

@@ -91,12 +91,30 @@
                     Al estilo<br>uñas de gato
                 </h1>
                 <div class="section__social-content-carousel">
-
+                    <div class="carousel">
+                        <!-- Video 1 -->
+                        <div class="carousel-item">
+                            <video src="/assets/video/video1.mp4" type="video/mp4" mcontrols></video>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="carousel-item">
+                            <video src="/assets/video/video2.mp4" type="video/mp4" controls></video>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="carousel-item">
+                            <video src="/assets/video/video3.mp4" type="video/mp4" controls></video>
+                        </div>
+                        <!-- Agrega más videos si es necesario -->
+                    </div>
+            
+                    <!-- Controles del Carrusel -->
+                    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
                 </div>
             </section>
         </section>
     </main>
     <footer></footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
