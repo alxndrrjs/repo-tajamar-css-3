@@ -1,0 +1,28 @@
+.section__details-content {
+    display: flex;
+    margin-top: 60px;
+
+    .section__details-img {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .section__details-text {
+
+        padding: 0px 40px;
+
+        .section__details-content-title {
+            font-family: $font-main;
+            text-transform: uppercase;
+            font-size: $font-main-size-main__title;
+            font-weight: $font-weight-main-title;
+            letter-spacing: $main-letter-spacing__title;
+            line-height: 1;
+            margin: 0;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
