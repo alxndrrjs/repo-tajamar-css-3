@@ -352,9 +352,12 @@
 .section__divisor-img {
   position: absolute;
   width: 100%;
-  top: 121.5rem;
+  top: 113.5rem;
 }
 
+.section__products {
+  background: linear-gradient(to top, #fff, #8DDDFF, #fff);
+}
 .section__products .section__products-content .section__products-content-main {
   margin-top: 30px;
   text-align: center;
@@ -379,27 +382,97 @@
   font-style: italic;
   margin-bottom: -15px;
 }
+.section__products .section__products-content .section__product-item {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, #FFBDD5, #fff);
+}
 .section__products .section__products-content .section__products-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.section__products .section__products-content .section__products-items .section__products-item {
-  padding: 19px 23px;
-}
-.section__products .section__products-content .section__products-items .section__products-item .section__products-footer .section__products-footer-title {
-  text-transform: uppercase;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  display: flex;
+  margin-top: 85px;
+  width: 100%;
   gap: 25px;
-  line-height: 1;
-  margin-top: 10px;
-  margin-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.section__products .section__products-content .section__products-items .section__products-item .section__products-footer .section__products-footer-btn {
+.section__products .section__products-content .section__products-items .product-card {
+  width: auto;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: solid 2px #000;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card {
+  padding: 19px 23px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-header {
+  min-height: 1.5625rem;
+  justify-content: space-between;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0.625rem;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-header .section__products-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-header .section__products-review .jdge-all-reviews {
+  color: #FFBDD5 !important;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-header .section__products-review .jdge-all-reviews span::before {
+  content: "\f005";
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-header .section__products-review span {
   text-transform: uppercase;
+  font-family: "Source Sans 3";
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-body {
+  position: relative;
+  margin: 35px 0;
+  flex-grow: 1;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-body .section__product-img {
+  width: auto;
+  height: 300px;
+  transition: all 0.2s ease-in-out;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-end;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-footer .section__products-footer-title {
+  margin: 0 10px 0 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-footer .section__products-footer-btn {
+  text-transform: uppercase;
+  width: 270px;
+  margin-left: auto;
   background-color: #fff;
   border-radius: 50px;
   border: solid 2px #000;
@@ -407,9 +480,36 @@
   padding: 16px;
   transition: all 0.2s ease-in-out;
 }
-.section__products .section__products-content .section__products-items .section__products-item .section__products-footer .section__products-footer-btn:hover {
+.section__products .section__products-content .section__products-items .product-card .section__products-card .section__products-footer .section__products-footer-btn:hover {
   background-color: #000;
   color: #fff;
+}
+.section__products .section__products-content .section__products-items .product-card:hover .section__product-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.section__details-content {
+  display: flex;
+  margin-top: 60px;
+}
+.section__details-content .section__details-img {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.section__details-content .section__details-text {
+  padding: 0px 40px;
+}
+.section__details-content .section__details-text .section__details-content-title {
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
