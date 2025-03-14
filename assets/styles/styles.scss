@@ -7,6 +7,9 @@
 @import 'partials/divisor';
 @import 'partials/products';
 
+@import 'partials/ad';
+@import 'partials/footer';
+
 
 * {
     outline: 0;
@@ -29,6 +32,8 @@ body {
     font-weight: 500;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     
 }
 
