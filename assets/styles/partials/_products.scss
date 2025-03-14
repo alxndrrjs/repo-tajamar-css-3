@@ -129,13 +129,14 @@
     
                     .section__products-footer {
                         display: flex;
-                        flex-direction: row;
-                        justify-content: stretch;
-                        align-items: flex-end;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 70px;
                           
                         .section__products-footer-title {
                             
-                            margin: 0 10px 0 0;
+                            margin: 0;
+                            width: 60%;
                             // font-size: 2.5rem;
                             line-height: .9;
                             text-transform: uppercase;
@@ -151,20 +152,50 @@
                         }
     
                         .section__products-footer-btn {
+
+                            font-family: $font-products-review;
+                            color: $global-btn-color;
+                            font-weight: 900;
+                            font-size: 20px;
                             text-transform: uppercase;
-                            width: 270px;
-                            margin-left: auto;
                             background-color: $global-btn-background;
                             border-radius: 50px;
                             border: solid $global-border-width $global-border-color;
-                            color: $global-btn-color;
-                            padding: 16px;
+                            padding: 16px 25px;
                             transition: all .2s ease-in-out ;
-    
+
                             &:hover {
                                 background-color: $global-btn-background-hover;
                                 color: $global-btn-color-hover;
                             }
+                            // .btn-shop {
+                            //     font-family: $font-products-review;
+                            //     color: $global-btn-color;
+                            //     font-weight: 900;
+                            //     font-size: 20px;
+                            //     text-transform: uppercase;
+                            //     background-color: $global-btn-background;
+                            //     border-radius: 50px;
+                            //     border: solid $global-border-width $global-border-color;
+                            //     padding: 16px 25px;
+                            //     margin-top: 15px;
+                            //     transition: all .2s ease-in-out ;
+
+                            //     &:hover {
+                            //         background-color: $global-btn-background-hover;
+                            //         color: $global-btn-color-hover;
+                            //     }
+                            // }
+                            // text-transform: uppercase;
+                            // width: 265px;
+                            // margin-left: auto;
+                            // background-color: $global-btn-background;
+                            // border-radius: 50px;
+                            // border: solid $global-border-width $global-border-color;
+                            // color: $global-btn-color;
+                            // padding: 16px;
+                            // transition: all .2s ease-in-out ;
+    
                         }
                     }
     
