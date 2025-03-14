@@ -1,0 +1,153 @@
+.section__footer {
+
+    border-top: solid $global-border-width currentColor;
+
+    .footer__copy {
+        background-color: $color-background;
+        padding: 0 20px;
+        margin: 0;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__copy-text {
+
+            text-transform: uppercase;
+            z-index: 1;
+            font-size: $font-footer-copy-size-text;
+            font-weight: 500;
+        }
+    }
+
+    .section__footer-main {
+        display: flex;
+        border-bottom: solid $global-border-width $global-border-color;
+
+        .footer__btn {
+            width: 55%;
+            border-right: solid $global-border-width $global-border-color;
+            .footer__menus {
+                background: linear-gradient(to right, #c5eefb 5%, $color-background);
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                
+                li {
+                    list-style-type: none;
+                    border-bottom: solid $global-border-width $global-border-color;
+                    transition: all .4s ease-in-out;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    
+                    .h4 {
+
+                        text-transform: uppercase;
+                        justify-content: flex-start;
+                        z-index: 1;
+                        font-size: $font-footer-menu-size-text;
+                        font-weight: $font-weight-main-title;
+                        letter-spacing: $main-letter-spacing__title;
+                        display: flex;
+                        gap: 25px;
+                        line-height: 1;
+                        transform: $main-height-font__title;
+                        padding: 18px 20px;
+
+                        transition: all .4s cubic-bezier(.5,0,0,1);
+
+                    }
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+
+                li:last-child {
+                    border-bottom: none;
+                }
+
+            }
+        }
+
+        .footer__updates {
+            background-color: $main-color;
+            width: 45%;
+            padding: 30px 100px 30px 100px;
+
+            .footer__updates-title {
+                text-transform: uppercase;
+                justify-content: flex-start;
+                position: relative;
+                z-index: 1;
+                font-size: $font-footer-updates-size-text;
+                font-weight: $font-weight-main-title;
+                letter-spacing: $footer-spacing-letter;
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                line-height: 1;
+                transform: $main-height-font__title;
+                margin-bottom: 5px;
+            }
+
+            .footer__updates-text {
+                font-size: $font-footer-para-size-text;
+            }
+
+            .email {
+                display: flex;
+                justify-content: space-between;
+                gap: 5px;
+
+                .footer__updates-em {
+                    border: solid $global-border-width $global-border-color;
+                    border-radius: 50px;
+                    padding-left: 16px;
+                    height: 62px;
+                    text-align: left;
+                    width: 100%;
+                    font-size: 16px;
+                }
+
+                .footer__updates-btn {
+                    text-transform: uppercase;
+                    background-color: $main-color;
+                    border-radius: 50px;
+                    border: solid $global-border-width $global-border-color;
+                    padding: 16px 50px;
+                    transition: all .2s ease-in-out ;
+
+                    &:hover {
+                        background-color: #fdd759;
+                    }
+                }
+            }
+
+            .socials {
+                display: inline-flex;
+                flex-direction: initial;
+                margin-top: 20px;
+                gap: 15px;
+                
+                .social__link {
+                    border: solid $global-border-width $global-border-color;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
