@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@342&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="include.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
                     <div class="header__wrapper-bar">
                         <div class="header__left">
                             <a class="header__menu" href="">
-                                <img class="header__menu-img" src="assets/img/header-icon/wave-menu-icon.png" alt="">
+                                <img class="header__menu-img" src="../assets/img/header-icon/wave-menu-icon.png" alt="">
                             </a>
                             <div class="header__shop">
                                 <a href="pages/all.html" class="header__shop-title">
@@ -34,18 +35,18 @@
                             </div>
                         </div>
                         <div class="header__center">
-                            <a href="index.html">
+                            <a href="#">
                                 <h1 class="header__center-title">Uñas de gato</h1>
                             </a>
                         </div>
                         <div class="header__right">
                             <a class="header__account">
-                                <img class="header__icon-img" src="assets/img/header-icon/account-icon.png" alt="">
+                                <img class="header__icon-img" src="../assets/img/header-icon/account-icon.png" alt="">
                             </a>
-                            <a class="header__cart">
+                            <a class="header__cart" id="cart-button">
                                 <button class="header__cart-btn">
-                                    Cart
-                                </button>
+                                    Cart (<span id="cart-count">0</span>)
+                                </button>   
                             </a>
                         </div>
                     </div>
@@ -129,198 +130,7 @@
                         Los sabores
                     </h1>
                 </div>
-                <div class="section__products-items">
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #727272, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>1800 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-1.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                        Energy ultra
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        <span class="btn-shop">
-                                            add to cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #44e93c, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>1800 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-2.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                        rio punch
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        add to cart
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #1aa87b, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>687 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-3.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                        fiesta mango
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        <span class="btn-shop">
-                                            add to cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #ef7070, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>1800 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-4.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                       ultra watermelon
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        <span class="btn-shop">
-                                            add to cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #faf26a, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>1800 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-5.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                        ultra gold
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        <span class="btn-shop">
-                                            add to cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="product-card" href="">
-                        <div class="bg-gradient" style="background: linear-gradient(to top, #FFBDD5, #fff 75%);">
-                            <div class="section__products-card">
-                                <div class="section__products-header">
-                                    <div class="section__products-review">
-                                        <div class="jdge-all-reviews">
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-on"></span>
-                                            <span class="judge-star jdge-half"></span>
-                                        </div>
-                                        <span>687 reviews</span>
-                                    </div>
-                                    <span class="secion__products-price">€25,95</span>
-                                </div>
-                                <div class="section__products-body">
-                                    <img class="section__product-img" src="/assets/img/products-item/lata-6.png" alt="">
-                                </div>
-                                <div class="section__products-footer">
-                                    <h1 class="section__products-footer-title">
-                                        strawberry dreams
-                                    </h1>
-                                    <div class="section__products-footer-btn">
-                                        <span class="btn-shop">
-                                            add to cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <div id="products-items"></div>
             </section>
             <section class="section__details-content">
                 <div class="section__details-img">
@@ -361,12 +171,21 @@
             </section>
         </section>
     </main>
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Vaciar Carrito</button>
+        </div>
+    </div>
     <footer class="section__footer">
         <div class="section__footer-main">
             <div class="footer__btn">
                 <ul class="footer__menus">
                     <li>
-                        <a class="h4" href="">
+                        <a class="h4" href="pages/all.html">
                             <h1 class="footer__menus-text">Shop</h1>
                         </a>
                     </li>
@@ -414,5 +233,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>

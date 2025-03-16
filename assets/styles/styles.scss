@@ -6,9 +6,11 @@
 @import 'partials/social';
 @import 'partials/divisor';
 @import 'partials/products';
+@import 'partials/products-all';
 @import 'partials/details';
 @import 'partials/ad';
 @import 'partials/footer';
+@import 'partials/cart';
 
 
 * {
@@ -40,4 +42,8 @@ body {
 a {
     all: unset;
     cursor: pointer;
+}
+
+button {
+    all: unset;
 }

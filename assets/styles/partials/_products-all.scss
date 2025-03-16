@@ -1,5 +1,7 @@
-.section__products {
+.section__products-all {
     background: linear-gradient(to top, $color-background, $sec-color, $color-background);
+    padding-top: 10%;
+    margin-bottom: 50px;
 
     .section__products-content {
 
@@ -20,13 +22,13 @@
                 display: flex;
                 flex-direction: column;
 
-                .section__products-content-title-up {
+                .section__products-content-title-up-all {
                     font-family: $font-body-sub;
                     color: $main-color;
                     font-size: $font-products-size-sub;
                     font-weight: 600;
                     font-style: italic;
-                    margin-bottom: -15px;
+                    margin-bottom: -10px;
                 }
             }
         }
