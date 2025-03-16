@@ -9,5 +9,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     loadHTML("products-items", "components/product.html");
-    loadHTML("products-items-all", "../components/product.html");
+    loadHTML("products-items-all", "../components/product-all.html");
 });
